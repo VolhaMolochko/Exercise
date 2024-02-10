@@ -8,22 +8,22 @@ public class Main {
         Cube cube = new Cube(4);
 
 
-        circle.printArea();
-        circle.printPerimeter();
+        System.out.println(circle.printArea());
+        System.out.println(circle.printPerimeter());
 
         System.out.println(" ");
 
-        square.printArea();
-        square.printPerimeter();
+        System.out.println(square.printArea());
+        System.out.println(square.printPerimeter());
 
         System.out.println(" ");
 
-        sphere.printArea();
-        sphere.printVolume();
+        System.out.println(sphere.printArea());
+        System.out.println(sphere.printVolume());
 
         System.out.println(" ");
 
-        cube.printArea();
-        cube.printVolume();
+        System.out.println(cube.printArea());
+        System.out.println(cube.printVolume());
     }
 }

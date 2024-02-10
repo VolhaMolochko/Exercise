@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Square implements Perimeter, Area {
+public class Square extends Figure2D implements Perimeter, Area {
     private final double a;
 
     public Square(double a) {
@@ -8,14 +8,12 @@ public class Square implements Perimeter, Area {
     }
 
     @Override
-    public void printPerimeter() {
-        System.out.println("Square perimeter is:");
-        System.out.println(a * 4);
+    public double printPerimeter() {
+        return (a * 4);
     }
 
     @Override
-    public void printArea(){
-        System.out.println("Square area is:");
-        System.out.println(a * a);
+    public double printArea() {
+        return (a * a);
     }
 }

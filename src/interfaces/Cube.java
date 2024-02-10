@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Cube implements Volume, Area {
+public class Cube extends Figure3D implements Volume, Area {
     private final double  a;
 
     public Cube(double a) {
@@ -8,14 +8,12 @@ public class Cube implements Volume, Area {
     }
 
     @Override
-    public void printVolume() {
-        System.out.println("Cube volume is:");
-        System.out.println(a * a * a);
+    public double printVolume() {
+        return(a * a * a);
     }
 
     @Override
-    public void printArea() {
-        System.out.println("Cube area is:");
-        System.out.println(a * a * 6);
+    public double printArea() {
+        return(a * a * 6);
     }
 }

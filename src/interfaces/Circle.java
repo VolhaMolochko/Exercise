@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Circle implements Perimeter, Area {
+public class Circle extends Figure2D implements Perimeter, Area {
     private final double rad;
 
     public Circle(double rad) {
@@ -8,15 +8,14 @@ public class Circle implements Perimeter, Area {
     }
 
     @Override
-    public void printPerimeter() {
-        System.out.println("Circle perimeter is:");
-        System.out.println(2 * rad * Math.PI);
+    public double printPerimeter() {
+        return (2 * rad * Math.PI);
     }
 
     @Override
-    public void printArea() {
-        System.out.println("Circle area is:");
-        System.out.println(rad * rad * Math.PI);
+    public double printArea() {
+        return (rad * rad * Math.PI);
     }
+
 
 }
