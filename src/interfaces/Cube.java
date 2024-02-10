@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Cube extends Figure3D implements Volume, Area {
+public class Cube extends Figure implements Volume, Area {
     private final double  a;
 
     public Cube(double a) {

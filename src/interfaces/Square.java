@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Square extends Figure2D implements Perimeter, Area {
+public class Square extends Figure implements Perimeter, Area {
     private final double a;
 
     public Square(double a) {

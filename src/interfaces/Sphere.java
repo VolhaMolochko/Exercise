@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Sphere extends Figure3D implements Volume, Area {
+public class Sphere extends Figure implements Volume, Area {
     private final double rad;
 
     public Sphere(double rad) {
