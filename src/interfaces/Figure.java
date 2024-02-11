@@ -1,10 +1,6 @@
 package interfaces;
 
-public abstract class Figure {
-    public abstract double printArea();
+public abstract class Figure implements Volume, Area, Perimeter {
 
-    public abstract double printPerimeter();
-
-    public abstract double printVolume();
 
 }
