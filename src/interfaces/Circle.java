@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Circle extends Figure implements Perimeter, Area {
+public class Circle extends Figure2D implements Perimeter, Area {
     private final double rad;
 
     public Circle(double rad) {

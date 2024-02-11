@@ -1,10 +1,6 @@
 package interfaces;
 
-public abstract class Figure {
+public abstract class Figures3D extends Figure implements Area, Volume {
     public abstract double printArea();
-
-    public abstract double printPerimeter();
-
     public abstract double printVolume();
-
 }

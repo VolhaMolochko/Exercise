@@ -9,10 +9,14 @@ public class Main {
         figures[3] = new Cube(4);
 
         for (int i = 0; i < figures.length; i++) {
-            System.out.println(figures[i].printArea());
-            System.out.println(figures[i].printPerimeter());
-            System.out.println(figures[i].printVolume());
-            System.out.println(" ");
+            if (figures[i] instanceof Figure2D) {
+                System.out.println(figures[i].printArea());
+                System.out.println(figures[i].printPerimeter());
+            } else {
+                System.out.println(figures[i].printVolume());
+                System.out.println(figures[i].printArea());
+                System.out.println(" ");
+            }
+            }
         }
     }
-}
