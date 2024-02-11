@@ -16,4 +16,8 @@ public class Sphere extends Figure implements Volume, Area {
     public double printArea() {
         return (4 * rad * rad * Math.PI);
     }
+    @Override
+    public double printPerimeter() {
+        return 0;
+    }
 }

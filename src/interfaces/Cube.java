@@ -16,4 +16,9 @@ public class Cube extends Figure implements Volume, Area {
     public double printArea() {
         return(a * a * 6);
     }
+
+    @Override
+    public double printPerimeter() {
+        return 0;
+    }
 }

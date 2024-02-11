@@ -17,5 +17,9 @@ public class Circle extends Figure implements Perimeter, Area {
         return (rad * rad * Math.PI);
     }
 
+    @Override
+    public double printVolume (){
+        return 0;
+    }
 
 }

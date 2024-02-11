@@ -16,4 +16,9 @@ public class Square extends Figure implements Perimeter, Area {
     public double printArea() {
         return (a * a);
     }
+
+    @Override
+    public double printVolume (){
+        return 0;
+    }
 }
